@@ -66,8 +66,10 @@ def img_compress(img, x_bins=100,y_bins=100):
     return(compressed)
 
 
-train_dir = '../input/train'
-test_dir = '../input/test'
+#train_dir = '../input/train'
+#test_dir = '../input/test'
+train_dir = '../train'
+test_dir = '../test'
 #Convert .jpg images into pixel arrays
 #imgs_train = [rgb_to_gray(mpimg.imread(train_dir + '/' + file, format = 'JPG')) for file in os.listdir(train_dir)]
 imgs_train_1 = [cv2.imread(train_dir + '/' + file) for file in os.listdir(train_dir)]
